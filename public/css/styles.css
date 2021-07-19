@@ -1,0 +1,59 @@
+body{
+
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/img/Anime-background-img.png');
+    background-color: black;
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    color: #333333;
+    padding: 10px;
+    min-height: 100vh;  
+    /* 100vh to occupy whole visual space */
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+
+footer{
+    /* color: #888888; */
+    color: #333333;
+    /* border-top: 1px solid #eeeeee; */
+    border-top: 1px solid #999999;
+    /* padding: 5px; */
+    margin-top: 20px;
+    margin-bottom: 1px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+
+header{
+    text-align: center;
+    font-size: 150%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+}
+
+
+input{
+    border: 1px solid #cccccc;
+    background-color: #FFFAFA;
+    width: 500px;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+button{
+    cursor: pointer;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid #cccccc;
+    /* border: 1px solid #888888; */
+    border-radius: 7px;
+    background-color: #DCDCDC;
+    /* background-color: #888888; */
+    
+    /* color: white; */
+    /* color: #cccccc; */
+    padding: 12px;
+}

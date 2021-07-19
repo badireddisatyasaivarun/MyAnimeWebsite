@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <link rel="icon" href="/img/Anime-background-img.png">
+     <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div style="text-align: center;">
+            {{>header}}
+        <form>
+            <input type="search" placeholder="Please Enter an Anime Name !!">
+            <button> Search </button>
+        </form>
+        </div>
+
+      
+            <div style="flex-grow: 1; margin-top:40px">
+                    <div style="text-align:center;">
+                        <p id="error1" style="font-size: larger;color:red"></p>
+                    </div>
+                <script id="script1">
+                    for(i=0;i<20;i++){
+                    
+                        document.write("<div id='d"+i+"' style='display:none; padding:10px; margin:auto;'>");
+                        document.write("<b id='name"+i+"' style='color:green; font-size:40px'></b>"+"<br>");
+
+                        document.write("<div id='dd"+i+"' style='display:inline-flex; padding:5px; margin:auto;'>");
+
+                        document.write("<img id='posterImage"+i+"' src='#' style='width:250px;'>");
+                        document.write("<div style='padding:20px'>")
+                        document.write("<p><b style='font-size:160%; font-family: Tahoma, sans-serif'>Synopsis: </b><span style='font-size:120%' id='content"+i+"'></span></p>");
+                        document.write("<p><b style='font-size:120%;font-family: Tahoma, sans-serif'>Rating: </b><spanstyle='font-size:120%' id='averageRating"+i+"'></span> </p>");
+                        document.write("<p><b style='font-size:120%;font-family: Tahoma, sans-serif'>StartDate: </b><span style='font-size:120%' id='startDate"+i+"'></span></p>");
+                        document.write("<p><b style='font-size:120%;font-family: Tahoma, sans-serif'>EndDate: </b><span style='font-size:120%' id='endDate"+i+"'></span></p>");
+                        document.write("<p><b style='font-size:120%;font-family: Tahoma, sans-serif'>Type: </b><span style='font-size:120%' id='type"+i+"'></span></p>");
+                        document.write("</div>");
+
+                        document.write("</div>");
+
+                        
+                        document.write("<br><br>");
+                        document.write("</div>"); 
+
+                }
+                </script>
+            </div>
+            
+       
+        {{>footer}}
+        <script src="js/app.js"></script>
+    </body>
+</html>
