@@ -17,7 +17,7 @@ app.set('views',views_path);
 hbs.registerPartials(partials_path);
 app.use(express.static(public_path));
 
-app.get('/home',(req,res)=>{
+app.get('/',(req,res)=>{
 res.render('index',{
   title: 'My Anime Website',
   name: 'Badireddi Satya Sai Varun'
