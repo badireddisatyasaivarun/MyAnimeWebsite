@@ -7,7 +7,7 @@ form.addEventListener('submit',(e)=>{
 const name = input.value;
 e.preventDefault();
 
-fetch('http://localhost:3000/src?name='+name).then((response)=>{
+fetch('/src?name='+name).then((response)=>{
 
 response.json().then((res)=>{
     
