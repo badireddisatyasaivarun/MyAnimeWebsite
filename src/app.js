@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const retrieve = require('./utils/retrieve');
+const port = process.env.PORT||3000;
 
 const app = express();
 
@@ -58,6 +59,6 @@ app.get('/home/*',(req,res)=>{
 })
  
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
   console.log('server started');
 })
